@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" charset="UTF-8;">
+<title>KKUTU CHEAT</title>
+<link rel="stylesheet" href="Welcome_files/normalize.css">
+<link rel="stylesheet" href="Welcome_files/style.css">
+<style>
+    body {
+        margin: 0 auto;
+        font-family: 나눔고딕, 돋움, Tahoma, Verdana, Arial, sans-serif;
+    }
+</style>
+<style></style></head><script src="Welcome_files/inject.js"></script>
+<body>
+ <div style="text-align:center">
+	<br />
+  <img src="files/header.png">
+  <br /><br />
+  <span style="font-size:180%">
+  <b>끄투 자음퀴즈 검색기</b>
+  <br />
+  </span>
+  <span style="font-size:100%">
+  사용 방법: 주제를 선택하고 자음을 써주세요
+  </span>
+  <br />
+ </div>
+ <p />
+ <div style="text-align:center" >
+	주제
+	<select required>
+	  <option value="">=선택해주세요=</option>
+	  <option value="cz">모든주제</option>
+	  <option value="ca">경제</option>
+	  <option value="cb">고적</option>
+	  <option value="cc">공업</option>
+	  <option value="cd">교육</option>
+	  <option value="ce">교통</option>
+	  <option value="cf">농업</option>
+	  <option value="cg">문학</option>
+	  <option value="ch">물리</option>
+	  <option value="ci">미술</option>
+	  <option value="cj">동물</option>
+	  <option value="ck">사회</option>
+	  <option value="cl">생물</option>
+	  <option value="cm">수학</option>
+	  <option value="cn">식물</option>
+	  <option value="co">언어</option>
+	  <option value="cp">역사</option>
+	  <option value="cq">운동</option>
+	  <option value="cr">음악</option>
+	  <option value="cs">지리</option>
+	  <option value="ct">지명</option>
+	  <option value="cu">천문</option>
+	  <option value="cv">컴퓨터</option>
+	  <option value="cw">화학</option>
+	  <option value="cx">나라 이름과 수도</option>
+	  <option value="cy">어인정</option>
+	</select>
+	<span style="display: inline">
+	  　제시된 자음: <input type="text" name="usrname" id="wkdma" required>
+	  <input type="submit" value="찾기" onclick="func()">
+	</span>
+ </div>
+ <div style="text-align:center;" >
+	<br>
+	 찾은 단어: 
+	 <span id="answer" style="font-size:120%; text-align:center; display:none;">
+	 쥬피썬더
+	 <span style="color:blue"><포켓몬스터></span>
+	 </span>
+ </div>
+ 
+<script type="text/javascript">
+function func() {
+	if (document.getElementById('wkdma').value.length > 1) {
+		var ans = document.getElementById('answer');
+		if (ans.style.display === 'none') {
+			ans.style.display = 'block';
+		}
+	}
+}
+</script>
+
+</div></body></html>
